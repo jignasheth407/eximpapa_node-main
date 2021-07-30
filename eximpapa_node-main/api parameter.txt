@@ -1,0 +1,580 @@
+POST URL for Signup = https://eximpapa.herokuapp.com/signup
+{   
+    "fname":"mausam",
+    "lname":"khandelwal",
+    "email":"mausam@gmail.com",
+    "password":"12345",
+    "repassword":"12345",
+    "mobilenumber":"123456789",
+    "countrycode":"+91"
+}
+_____________________________________________________________________________
+
+POST URL for Login= https://eximpapa.herokuapp.com/login
+
+{   
+    "email":"mausam@gmail.com",
+    "password":"12345"
+}
+______________________________________________________________________________
+
+After Login Header Genrated 
+
+x-auth (Header Name)=Token String
+
+_______________________________________________________________________________
+
+Forget Password API'S
+
+  1) Get Email For Verify User Is Exist Or Not
+
+     Post URL For Email API= https://eximpapa.herokuapp.com/getemail 
+
+    {
+      "email":"mausam@gmail.com"
+    }
+
+  2) Get OTP For Verify OTP is Valid Or Not 
+
+    Post URL For OTP =https://eximpapa.herokuapp.com/verifyotp
+
+    {
+      "otp":"123456"
+    } 
+
+  3) Get Password For Update Password
+
+    PUT URL For Change Password=https://eximpapa.herokuapp.com/changepassword
+
+    {
+      "password":"12345"
+    }
+
+________________________________________________________________________________
+
+PUT URL for Complete Profile API =https://eximpapa.herokuapp.com/completeprofile
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+Exporter
+{
+     		         "fname":"rajat",
+                  "lname":"gupta",
+                  "email":"rajat@gmail.com",
+                  "mobilenumber":"7415310784",
+                  "city":"indore",
+                  "country":"india",
+                  "profile":"exporter",
+                  "companyname":"abcd",
+                  "position":"director",
+                  "type":"farmer",
+                  "companylocationcity":"indore",
+                  "companylocationcountry":"india",
+                  "contactinfo":"vijay nagar indore",
+                  "contactemail":"rajat@gmail.com",
+                  "productlist":"toys"
+}
+Importer
+{
+	                "fname":"rohit",
+                  "lname":"mahajan",
+                  "email":"rohit@gmail.com",
+                  "mobilenumber":"123456789",
+                  "city":"indore",
+                  "country":"india",
+                  "profile":"importer",
+                  "companyname":"abcd",
+                  "position":"ceo",
+                  "companylocationcity":"pithampur",
+                  "companylocationcountry":"india",
+                  "contactinfo":"dhar",
+                  "contactemail":"rohit@gmail.com",
+                  "productlist":"cosmtics"
+}
+farmer
+{
+	   	            "fname":"kapil",
+                  "lname":"sharma",
+                  "email":"kapil@gmail.com",
+                  "mobilenumber":"123456789",
+                  "city":"indore",
+                  "country":"india",
+                  "profile":"farmer",
+                  "cropname":"wheat",
+                  "minimumproductioncapacity":"5tones",
+                  "availableland":"100 hectare",
+                  "countryname":"india",
+                  "cityname":"indore",
+                  "area":"indore"
+ }
+
+manufacturer
+{
+		              "fname":"shubham",
+                  "lname":"kushwah",
+                  "email":"shubham@gmail.com",
+                  "mobilenumber":"123456789",
+                  "city":"indore",
+                  "country":"india",
+                  "profile":"manufacturer",
+                  "companyname":"abcd",
+                  "position":"owner",
+                  "companylocationcity":"indore",
+                  "companylocationcountry":"india",
+                  "contactinfo":"indore",
+                  "contactemail":"shubaham@gmail.com",
+                  "productlist":"cloths,toys"
+}
+cha
+{
+	 	              "fname":"harsh",
+                  "lname":"gupta",
+                  "email":"harsh@gmail.com",
+                  "mobilenumber":"123456789",
+                  "city":"indore",
+                  "country":"india",
+                  "profile":"cha",
+                  "companyname":"abcd",
+                  "position":"employee",
+                  "companylocationcity":"indore",
+                  "companylocationcountry":"india",
+                  "contactinfo":"indore",
+                  "contactemail":"harsh@gmail.com",
+                  "servicesincountry":"india japan",
+                  "coveredportname":"dockyard",
+                  "type":"all"
+}
+inspection
+{
+		              "fname":"omar",
+                  "lname":"ismail",
+                  "email":"omar@gmail.com",
+                  "mobilenumber":"123456789",
+                  "city":"nepa",
+                  "country":"india",
+                  "profile":"inspection",
+                  "companyname":"abcd",
+                  "position":"broker",
+                  "companylocationcity":"indore",
+                  "companylocationcountry":"india",
+                  "contactinfo":"indore",
+                  "contactemail":"omar@gmail.com",
+                  "productlist":"cotton",
+                  "serveincity":"mumbai",
+                  "serveincountry":"india",
+                  "approxprice":"$500"
+}
+freightforwarder
+{
+	 	              "fname":"himanshu",
+                  "lname":"agrawal",
+                  "email":"himanshu@gmail.com",
+                  "mobilenumber":"123456789",
+                  "city":"dewas",
+                  "country":"india",
+                  "profile":"freightforwarder,
+                  "companyname":"abcd",
+                  "position":"other",
+                  "companylocationcity":"dewas",
+                  "companylocationcountry":"india",
+                  "contactinfo":"dewas",
+                  "contactemail":"himanshu@gmail.com",
+                  "servicesincountry":"india, russia",
+                  "routefromcitytocity":"indore to bhopal",
+                  "schedule":"daily",
+                  "loadingcapacity":"20ft",
+                  "approxprice":"$200"
+}
+shippingline
+{
+	 	              "fname":"mausam",
+                  "lname":"khandelwal",
+                  "email":"mausam@gmail.com",
+                  "mobilenumber":"123456789",
+                  "city":"ratlam",
+                  "country":"india",
+                  "profile":"shippingline",
+                  "companyname":"abcd",
+                  "position":"other",
+                  "companylocationcity":"ratlam",
+                  "companylocationcountry":"india",
+                  "contactinfo":"ratlam",
+                  "contactemail":"mausam@gmail.com",
+                  "servicesincountry":"india,germany",
+                  "coveredportname":"martungaport"
+}
+warehouse
+{
+                  "fname":"abhishek",  
+                  "lname":"jain",
+                  "email":"abhishek@gmail.com",
+                  "mobilenumber":"123456789",
+                  "city":"jaora",
+                  "country":"india",
+                  "profile":"warehouse",
+                  "companyname":"abcd",
+                  "position":"employee",
+                  "companylocationcity":"ratlam",
+                  "companylocationcountry":"india",
+                  "contactinfo":"jaora",
+                  "contactemail":"abhishek@gmail.com",
+                  "productlist":"all",
+                  "holdingcapacity":"500 tones",
+                  "approxcharges":"$1000"
+}
+broker
+{
+                  "fname":"ashish",  
+                  "lname":"patidar",
+                  "email":"ashish@gmail.com",
+                  "mobilenumber":"123456789",
+                  "city":"gwalior",
+                  "country":"india",
+                  "profile":"broker",
+                  "companyname":"abcd",
+                  "position":"owner",
+                  "companylocationcity":"gwalior",
+                  "companylocationcountry":"india",
+                  "contactinfo":"gwalior",
+                  "contactemail":"asish@gmail.com",
+                  "productlist":"electronics",
+                  "countryselected":"USA"
+}
+
+investor
+{
+ 		              "fname":"tanmay",  
+                  "lname":"salvi",
+                  "email":"tanmay@gmail.com",
+                  "mobilenumber":"123456789",
+                  "city":"jaora",
+                  "country":"india",
+                  "profile":"investor",
+                  "companyname":"abcd",
+                  "position":"director",
+                  "companylocationcity":"bhopal",
+                  "companylocationcountry":"india",
+                  "contactinfo":"bhopal",
+                  "contactemail":"tanmay@gmail.com",
+                  "productlist":"gold",
+                  "serveinthecity":"jabalpur gwalior",
+                  "serveinthecountry":"india japan"
+                  "raisefund":"$300"
+}
+
+insuranceprovider
+{
+		              "fname":"rahul",  
+                  "lname":"jain",
+                  "email":"rahul@gmail.com",
+                  "mobilenumber":"123456789",
+                  "city":"depalpur",
+                  "country":"india",
+                  "profile":"insuranceprovider",
+                  "companyname":"abcd",
+                  "position":"ceo",
+                  "companylocationcity":"indore",
+                  "companylocationcountry":"india",
+                  "contactinfo":"depalpur",
+                  "contactemail":"rahul@gmail.com",
+                  "productlist":"cloth",
+                  "serveinthecity":"ujjain indore bhopal",
+                  "serveinthecountry":"india",
+                  "approxcharges":"$300"
+}
+finance
+{
+
+	 	              "fname":"amit",  
+                  "lname":"jaiswal",
+                  "email":"amit@gmail.com",
+                  "mobilenumber":"123456789",
+                  "city":"jabalpur",
+                  "country":"india",
+                  "profile":"finance",
+                  "companyname":"abcd",
+                  "position":"other",
+                  "companylocationcity":"jabalpur",
+                  "companylocationcountry":"india",
+                  "contactinfo":"jabalpur",
+                  "contactemail":"amit@gmail.com",	
+                  "productlist":"gold",
+                  "serveinthecity":"jabalpur gwalior",
+                  "serveinthecountry":"india japan"
+                  "raisefund":"$300"
+}
+
+_____________________________________________________________________________
+
+
+Post URL for Requirements API =https://eximpapa.herokuapp.com/requirements
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+
+{
+  "minimumunit":"12",
+  "minimumqty":"250",
+  "portofdischarge":"kalinga",
+  "targetprice":"$300",
+  "requiredpricetype":"2500",
+  "paymentterms":"other",
+  "requiredquotenos":"2",
+  "origin":"bhuwneshwar"
+}
+
+_____________________________________________________________________________
+
+
+
+__________________________________________________________________
+
+Get Url For Find Exporter
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+
+https://eximpapa.herokuapp.com/search?type=exporter
+
+____________________________________________________________________
+
+Get Url For Find Importer
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/search?type=importer
+
+__________________________________________________________________
+
+Get Url For Find Warehouse
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/search?type=warehouse
+
+__________________________________________________________________
+
+Get Url For Find financer
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/search?type=financer
+
+__________________________________________________________________
+
+
+Get Url For Find insuranceprovider
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/search?type=insuranceprovider
+
+__________________________________________________________________
+
+
+Get Url For Find inspection
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/search?type=inspection
+
+_____________________________________________________________________________
+
+Get Url For Find insurance
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/search?type=insurance
+
+_________________________________________________________________________________
+
+Get Url For Find farmer
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/search?type=farmer
+
+___________________________________________________________________________________
+
+Get Url For Find cha
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/search?type=cha
+
+
+___________________________________________________________________________________
+
+Get Url For Find shippingline
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/search?type=shippingline
+
+___________________________________________________________________________________
+
+Get Url For Find freightforwarder
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/search?type=freightforwarder
+
+__________________________________________________________________________________
+
+Get Url For Find broker
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/search?type=broker
+
+__________________________________________________________________________________
+
+
+Get Url For Find investor
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/search?type=investor
+
+
+_____________________________________________________________________________________
+
+Post Url for Feeedback
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/feedback
+
+{
+ "feedback":"Nice Application"
+}
+__________________________________________________________________
+
+Post Url for PostProduct
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/postproduct
+
+{
+ "image":"xyz.jpg",
+ "productname":"toys",
+ "availableunit":"2560",
+ "availableqty":"25",
+ "countryoforigin":"india",
+ "offerprice":"2555",
+ "other":"sss"
+
+}
+
+__________________________________________________________________________________
+
+Get Url For Get all PostProduct
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/getallpost
+
+__________________________________________________________________________________
+
+Get URL For Getting only Login User Post
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/getpost
+
+____________________________________________________________________________________
+
+
+Put URL For Like 
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/like
+
+{
+  "postId":"608157efbc1d7b2b7838d0aa"
+}
+
+______________________________________________________________________________________
+
+Put URL For UnLike 
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/unlike
+
+{
+  "postId":"608157efbc1d7b2b7838d0aa"
+}
+_______________________________________________________________________________________
+
+Put Url For Comment
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/comment
+
+
+{
+    "text":"nice",
+   
+}
+
+
+______________________________________________________________________________________________
+
+GET API For Other User Profile Page 
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/profile/608157efbc1d7b2b7838d0aa
+
+
+
+_____________________________________________________________________________________________
+
+PUT API For Follow 
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/follow
+
+{
+  "followerId":"608157efbc1d7b2b7838d0aa"
+}
+
+_______________________________________________________________________________________________
+
+
+PUT API For UnFollow 
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/unfollow
+
+{
+  "unfollowerId":"608157efbc1d7b2b7838d0aa"
+}
+
+_________________________________________________________________________________________________
+
+Get API For getting only Followers Post
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/followingpost
+_________________________________________________________________________________________________
+
+PUT API For Update User Profile Pic
+
+Header => "x-auth":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9______________________"
+
+https://eximpapa.herokuapp.com/userprofilepic
+
+{
+  "profileimage":"xyz.jpg"
+}
+
+
+https://eximpapa.herokuapp.com/ | https://git.heroku.com/eximpapa.git
